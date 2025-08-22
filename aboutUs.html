@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>sarisariph</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <body class="font-sans scroll-smooth overflow-x-hidden"> -->
+<body class="font-sans scroll-smooth overflow-x-hidden ">
+
+  <!-- Navigation Header - now flush with top -->
+  <nav class="bg-black/80 text-white fixed w-full z-50 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-xl font-semibold tracking-wide">
+        <span class="text-white">SARISARI</span>
+        <span class="text-[#FD4912]">PH</span>
+        <div class="text-xs text-gray-300">NATURAL AND ORGANIC STORE</div>
+      </div>
+      
+      <div class="hidden md:flex items-center space-x-6 uppercase text-sm font-semibold">
+        <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white">Sign Up</a>
+        <a href="#" class="text-gray-300 hover:text-white">Login</a>
+        <a href="contactUs.html" class="text-gray-300 hover:text-white">Contact Us</a>
+        <a href="aboutUs.html" class="text-gray-300 hover:text-white">About Us</a>            
+        <div class="flex items-center space-x-4 ml-4">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1117 7.5a7.5 7.5 0 01-.35 9.15z" />
+          </svg>
+          <div class="relative">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1 2h13m-5 4a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+            <span class="absolute -top-2 -right-2 bg-white text-black text-xs font-bold rounded-full px-1">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<div class="aboutUs">   
+  
+  <!-- Company Content Section -->   
+  <section class="w-full overflow-hidden">
+    <div class="flex items-center justify-center ">                    
+          <video src="mp4/spices.mp4" autoplay muted loop playsinline></video>   
+        <div class="absolute flex items-center justify-center">
+            <h1 class=" text-4xl font-bold text-white flex items-center justify-center tracking-[1px]">ABOUT US</h1>
+        </div>          
+    </div>
+    <!-- Circle  -->
+    <div class="circle h-auto w-full">
+        <div class="circle-wrapper h-[100px] w-full overflow-hidden relative mt-[-100px]">
+            <div class="w-[150%] h-[790%] sm:h-[760%] absolute left-[50%] rounded-[50%] transform -translate-x-1/2 bg-white"></div>
+        </div>
+    </div>   
+  </section>
+
+  <!-- company details-->
+  <section class="w-full flex gap-16 px-16 py-20 ">
+    <div class="flex flex-col md:flex-row justify-center items-center ">
+        <div class="md:w-1/2 text-[#101010] space-y-7 m-7 ">  
+          <!-- title  -->
+          <div id="text-animation">
+              <div class="title-animation">
+                  <div class="heading overflow-hidden">                                                                
+                      <span class="text-4xl font-bold">The <span class="text-[#FD4912]">First</span> and <span class="text-[#FD4912]">#1</span> E-Commerce Platform for Farmers and Fishers</span>
+                  </div>                            
+              </div> 
+          </div>
+
+          <!-- description -->
+          <div id="text-animation">
+              <div class="title-animation">
+                  <div class="heading overflow-hidden">                                                                
+                      <span class="reveal-type text-lg" data-bg-color="#A8B7B7" data-fg-color="#101010">SARISARI PH is an e-commerce platform provider for farmers, fishers, and producers. Local farmers and fishers can sell their produce thus promoting local farming and fishery while providing healthier options to consumers and aiming to bridge the gap between agri-fisheries and direct market.</span>                                                                              
+                  </div>                            
+              </div> 
+          </div>
+          
+          <button id="view-btn" class="flex flex-col text-submit submit bg-[#FD4912]/90 px-5 py-2 rounded-md text-sm text-white tracking-[2px] font-medium md:col-span-2 hover:bg-[#FD4912] transition-colors duration-300">View Our Service</button>        
+        </div>
+
+        <!-- farmer's video -->
+        <div class="md:w-3/4 flex justify-center items-center relative">
+          <video src="mp4/farmer.mp4" autoplay muted loop playsinline class="rounded-2xl right-slide w-full max-w-3xl h-auto"></video>    
+        </div>
+      </div> 
+  </section>          
+
+
+  <!-- Mission and Vision -->  
+  <section class="block w-full h-screen  relative flex flex-col justify-center items-center gap-8 px-10 ">    
+        
+        <!-- Background glow --> 
+        <!-- <div class="-z-10 justify-center items-center">
+          <div id="glow-circle" class="circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[600px] max-h-[400px]">
+            <div class="absolute inset-0 rounded-full bg-[#FD4912]/10 blur-xl"></div>
+          </div>
+        </div> -->
+
+        <!-- cube animation background-->
+        <div class="top-slide container ">
+        </div>
+
+        <!-- Mission -->       
+        <div class="z-10 top-slide h-64 max-w-3xl bg-white/70 border border-[#FD4912]/20 p-10 rounded-2xl flex flex-col justify-center items-center text-center">
+          <div class="space-y-4">
+            <span class="text-[#FD4912] text-4xl font-semi-bold">MISSION</span>
+            <p class="text-[#101010]/70 text-lg leading-relaxed px-24">
+              To bridge the gap between agri-fisheries and direct market, while promoting healthier options to consumers.
+            </p>
+          </div>              
+        </div>          
+          
+        <!-- Vision -->        
+        <div class="z-10 top1-slide h-64 max-w-3xl bg-white/70 border border-[#FD4912]/20 p-10 rounded-2xl flex flex-col justify-center items-center text-center">
+          <div class="space-y-4">
+            <span class="text-[#FD4912] text-4xl font-semi-bold">VISION</span>
+            <p class=" text-[#101010]/70 text-lg leading-relaxed px-24">
+              The first and no. 1 e-commerce platform for farmers and fishers to the market.
+            </p>
+          </div>              
+        </div>          
+  </section>
+
+  <!-- sliding image -->
+  <section class="relative inline-block overflow-hidden">
+    <div class="image-row flex items-center justify-center">
+    <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-50 rounded-full right-roll">
+    <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 rounded-full right-roll">  
+    <div class="flex items-center justify-center h-80 w-[110rem] bg-white rounded-full border border-[#FD4912]/50 transform-origin-center">                                  
+      <div id="text-animation" >
+        <div class="things-animation">
+          <div class="heading overflow-hidden">
+            <div class="flex flex-col justify-center items-center space-y-4">    
+              <span class="text-[#FD4912] text-4xl text-center font-semi-bold px-4 md:px-10 tracking-[1px]">
+                THINGS WE CARE ABOUT
+              </span>                
+            </div>             
+          </div>             
+        </div>             
+      </div>             
+    </div>       
+    <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-20 rounded-full right-roll">
+  </div>       
+      
+    <div class="image-row flex items-center justify-center">            
+      <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-10 rounded-full left-roll">
+      <div class="flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center">                                          
+        <div id="text-animation" class="w-full px-32">
+          <div class="community-animation">
+            <div class="heading overflow-hidden">
+              <div class="email-slide flex flex-col justify-center items-center space-y-4">    
+                <span class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]">COMMUNITY</span>   
+                <p class="community-animation text-[#101010] text-lg leading-relaxed text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex maxime ut natus debitis cum perspiciatis provident velit consequuntur nam earum modi sapiente deserunt, asperiores magnam, voluptatem sunt? Recusandae, laboriosam est.
+                </p>              
+              </div>             
+            </div>             
+          </div>             
+        </div>             
+      </div>              
+      <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-50 rounded-full left-roll">
+      <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 rounded-full left-roll">     
+    </div>
+
+      <div class="image-row flex items-center justify-center ">         
+          <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-50 rounded-full right1-roll"> 
+          <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 rounded-full right1-roll"> 
+        <div class=" flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center">                                  
+          <div id="text-animation" class="w-full px-32">
+            <div class="moral-animation">
+              <div class="heading overflow-hidden">
+                <div class="phone-slide flex flex-col justify-center items-center space-y-4">    
+                  <span class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]">MORAL</span>   
+                  <p class="moral-animation text-[#101010] text-lg leading-relaxed text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex maxime ut natus debitis cum perspiciatis provident velit consequuntur nam earum modi sapiente deserunt, asperiores magnam, voluptatem sunt? Recusandae, laboriosam est.
+                  </p>              
+                </div>             
+              </div>             
+            </div>             
+          </div>           
+        </div>
+        <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-10 rounded-full right1-roll">        
+      </div>
+
+      <div class="image-row flex items-center justify-center">         
+        <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-10 rounded-full left1-roll">
+        <div class=" flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center">                                  
+          <div id="text-animation" class="w-full px-32">
+            <div class="people-animation">
+              <div class="heading overflow-hidden">
+                <div class="address-slide flex flex-col justify-center items-center space-y-4">    
+                  <span class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]">PEOPLE</span>   
+                  <p class="people-animation text-[#101010] text-lg leading-relaxed text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex maxime ut natus debitis cum perspiciatis provident velit consequuntur nam earum modi sapiente deserunt, asperiores magnam, voluptatem sunt? Recusandae, laboriosam est.
+                  </p>              
+                </div>             
+              </div>             
+            </div>             
+          </div>         
+        </div>        
+        <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 opacity-50 rounded-full left1-roll">
+        <img src="img/orange.jpg" alt="Image 6" class="h-80 w-80 rounded-full left1-roll">     
+      </div>
+  </section>    
+
+  <!-- team profile  -->
+  <section class="h-full w-full p-10">  
+    <div class="flex h-full w-full items-center justify-center p-4">
+      <div class="w-[1200px] max-w-full">
+        <ul id="gallery" class="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]">
+          <!-- Person 1 -->
+          <li class="relative cursor-pointer md:w-[8%] md:first:w-[1%] md:hover:w-[12%] group-hover:w-[7%] transition-[width] duration-200 ease-in pointer-events-none" data-active="false" data-index="0">
+                <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+                  <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2 md:opacity-0"
+                      src="img/profile.jpg" alt="Person 1" width="590" height="640">
+                  <div class="inset-0 opacity-0 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+                  <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-4 md:opacity-0 md:p-0">
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 2 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="1">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">            
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Vice President</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">John Doe</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 3 (Active by default) -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="2">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">              
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Secretary</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Joe Smith</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 4 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="3">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">                            
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Secretary</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Joe Smith</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 5 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="4">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">              
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Vice President</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">John Doe</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 6 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="5">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">
+                <p class="text-white text-sm uppercase text-primary md:text-lg">President</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Alex Pasia</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 7 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="6">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">                            
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Senior Developer</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Walter Toledo</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 8 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="7">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">                            
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Junior Web Developer</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Ed Gallardo</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 9 -->
+          <li class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+              data-active="true" data-index="8">
+            <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+              <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  src="img/profile.jpg" alt="Person 3" width="590" height="640">
+              <div class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+              <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0">
+                <p class="text-white text-sm uppercase text-primary md:text-lg">Junior Web Developer</p>
+                <p class="text-[#FD4912] text-lg font-bold md:text-4xl">Joshua Manto</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Person 10 -->
+          <li class="relative cursor-pointer md:w-[8%] md:first:w-[1%] md:hover:w-[12%] group-hover:w-[7%] transition-[width] duration-200 ease-in pointer-events-none" data-active="false" data-index="9">
+                <div class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20">
+                  <img class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2 md:opacity-0"
+                      src="img/profile.jpg" alt="Person 10" width="590" height="640">
+                  <div class="inset-0 opacity-0 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"></div>
+                  <div class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-4 md:opacity-0 md:p-0">
+              </div>
+            </div>
+          </li>
+        </ul>    
+      </div>
+    </div>
+  </section>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

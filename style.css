@@ -1,0 +1,195 @@
+/* mission and vision animation background */
+ @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .product-cube {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      z-index: 1;
+      transform-style: preserve-3d;
+    }
+
+    .product-cube .cube__face {
+      position: absolute;      
+      width: 100%;
+      height: 100%;
+      color: white;
+      opacity: 20%;      
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .product-cube .cube__face--front {
+      transform: rotateY(0deg) translateZ(25px);
+    }
+
+    .product-cube .cube__face--right {
+      transform: rotateY(90deg) translateZ(25px);
+    }
+
+    .product-cube .cube__face--back {
+      transform: rotateY(180deg) translateZ(25px);
+    }
+
+    .product-cube .cube__face--left {
+      transform: rotateY(-90deg) translateZ(25px);
+    }
+
+    .product-cube .cube__face--top {
+      transform: rotateX(90deg) translateZ(25px);
+    }
+
+    .product-cube .cube__face--bottom {
+      transform: rotateX(-90deg) translateZ(25px);
+    }
+
+
+/* team profile animation */
+    :root {
+      --transition: 200ms ease-in;
+    }
+    .group:hover .group-hover\:w-\[7\%\] {
+      width: 100%;
+    }
+    
+
+/* reveal animation */
+#text-animation span {
+    display: inline-block;
+    transform: translateY(-100%);
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% ;
+  }
+
+  /* .animated label {
+    z-index: 1;
+  }
+  .animated input {
+    position: relative; 
+    z-index: 0;
+  } */
+  
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.item.active {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    max-width: 500px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease 0.3s;
+}
+
+.item.active .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.nav {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.nav-btn ion-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* about us animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
