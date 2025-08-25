@@ -1,55 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>sarisariph</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-800 font-sans">
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>sarisariph</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-white text-gray-800 font-sans font-sans scroll-smooth overflow-x-hidden"
+  >
     <nav class="bg-black/80 text-white fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
         <!-- Logo -->
         <div class="text-xl font-semibold tracking-wide">
-            <span class="text-white">SARISARI</span>
-            <span class="text-[#FD4912]">PH</span>
-            <div class="text-xs text-gray-300">NATURAL AND ORGANIC STORE</div>
+          <span class="text-white">SARISARI</span>
+          <span class="text-[#FD4912]">PH</span>
+          <div class="text-xs text-gray-300">NATURAL AND ORGANIC STORE</div>
         </div>
-        
-        <div class="hidden md:flex items-center space-x-6 uppercase text-sm font-semibold">
-            <a href="#" class="text-gray-300 hover:text-white">Home</a>
-            <a href="#" class="text-gray-300 hover:text-white">Sign Up</a>
-            <a href="#" class="text-gray-300 hover:text-white">Login</a>
-            <a href="contactUs.html" class="text-gray-300 hover:text-white">Contact Us</a>
-            <a href="aboutUs.html" class="text-gray-300 hover:text-white">About Us</a>            
-            <div class="flex items-center space-x-4 ml-4">
-            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1117 7.5a7.5 7.5 0 01-.35 9.15z" />
+
+        <div
+          class="hidden md:flex items-center space-x-6 uppercase text-sm font-semibold"
+        >
+          <button href="#" class="text-gray-300 hover:text-white">Home</button>
+          <button  href="#" class="text-gray-300 hover:text-white">Sign Up</button>
+          <button  href="#" class="text-gray-300 hover:text-white">Login</button>
+          <button href="#contactUs" 
+            class="text-gray-300 hover:text-white"
+            data-page="contactUs"
+          >
+            Contact Us
+          </button>
+          <button href="#aboutUs"
+            class="text-gray-300 hover:text-white"
+            data-page="aboutUs"
+          >
+            About Us
+          </button>
+          <div class="flex items-center space-x-4 ml-4">
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1117 7.5a7.5 7.5 0 01-.35 9.15z"
+              />
             </svg>
             <div class="relative">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1 2h13m-5 4a1 1 0 11-2 0 1 1 0 012 0z" />
-                </svg>
-                <span class="absolute -top-2 -right-2 bg-white text-black text-xs font-bold rounded-full px-1">0</span>
+              <svg
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1 2h13m-5 4a1 1 0 11-2 0 1 1 0 012 0z"
+                />
+              </svg>
+              <span
+                class="absolute -top-2 -right-2 bg-white text-black text-xs font-bold rounded-full px-1"
+                >0</span
+              >
             </div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </nav>
 
-    
+    <!-- contact us page -->
+    <div id="contactUs" class="d-none page contactUs">
+      <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+        <!-- <img src="fruits.jpg" alt="GET IN TOUCH WITH US" class="w-full h-full object-cover">    -->
+        <video src="mp4/vegy.mp4" autoplay muted loop playsinline></video>
+        <div class="absolute flex items-center justify-center">
+          <h1
+            class="text-4xl font-bold text-white flex items-center justify-center tracking-[1px]"
+          >
+            GET IN TOUCH WITH US
+          </h1>
+        </div>
+      </div>
+      <!-- Circle  -->
+      <div class="circle h-auto w-full">
+        <div
+          class="circle-wrapper h-[100px] w-full overflow-hidden relative mt-[-100px]"
+        >
+          <div
+            class="w-[150%] h-[790%] sm:h-[760%] absolute left-[50%] rounded-[50%] transform -translate-x-1/2 bg-white"
+          ></div>
+        </div>
+      </div>
+
+      <div class="w-full">
+        <div class="bg-[#F5F6F8] text-[#101010]">
+          <div class="w-full flex gap-16 px-32 py-20 form bg-white">
+            <!-- contact info -->
+            <div
+              class="flex flex-col contact w-full tracking-[1px] gap-6 pr-10"
+            >
+              <!-- title -->
+              <div class="flex flex-col gap-3">
+                <div id="text-animation">
+                  <div class="title-animation">
+                    <div class="heading overflow-hidden">
+                      <span class="text-lg"
+                        >WE’RE <span>HERE</span> TO <span>HELP</span> YOU</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div id="text-animation">
+                  <div class="title-animation">
+                    <div class="heading overflow-hidden">
+                      <span class="text-5xl"
+                        >Let's
+                        <span class="font-bold text-[#FD4912]">Talk</span> About
+                        What You Need
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div id="text-animation">
+                  <div class="title-animation">
+                    <div class="heading overflow-hidden">
+                      <span
+                        class="reveal-type text-lg"
+                        data-bg-color="#A8B7B7"
+                        data-fg-color="#101010"
+                        >If you have any questions, please feel free to get in
+                        touch with us. We will reply to you as soon as possible.
+                        Thank you!</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-b border-gray-50" />
+              <!-- email -->
+              <div class="flex flex-col gap-3 text-lg">
+                <div class="email-slide flex gap-4">
+                  <i class="fa-solid fa-envelope text-xl"></i>
+                  <div class="flex flex-col">
+                    <span class="font-medium text-sm">E-mail</span>
+                    <span class="text-gray-500">sales@avasiaonline.com</span>
+                  </div>
+                </div>
+
+                <div class="phone-slide flex gap-4">
+                  <i class="fa-solid fa-phone text-xl"></i>
+                  <div class="flex flex-col">
+                    <span class="font-medium text-sm">Phone Number</span>
+                    <span class="text-gray-500">7747-2917</span>
+                  </div>
+                </div>
+
+                <div class="address-slide flex gap-4">
+                  <i class="fa-solid fa-location-dot text-xl"></i>
+                  <div class="flex flex-col">
+                    <span class="font-medium text-sm">Address</span>
+                    <span class="text-gray-500"
+                      >5th floor Bloomingdale Plaza, Shaw Boulevard Kapitolyo
+                      Pasig City, Metro Manila 1600, Philippines</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- contact form -->
+            <div
+              class="text-name form w-full bg-white shadow p-10 border rounded-2xl"
+            >
+              <div class="flex flex-col gap-8 text-sm">
+                <div class="relative">
+                  <div class="text-name">
+                    <div
+                      id="name-error"
+                      class="hidden error-message absolute text-red-500 left-4 bottom-14 text-sm mt-2"
+                    ></div>
+                    <label
+                      class="absolute left-4 top-3 text-gray-500 transition-all pointer-events-none z-10 px-1"
+                      for="name"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="bg-[#F5F6F8] border p-4 rounded-md text-gray-500 w-full focus:outline-none focus:ring-1 focus:ring-gray-600"
+                      placeholder=" "
+                    />
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="text-email">
+                    <div
+                      id="email-error"
+                      class="hidden error-message absolute text-red-500 left-4 bottom-14 text-sm mt-2"
+                    ></div>
+                    <label
+                      class="absolute left-4 top-3 text-gray-500 transition-all pointer-events-none z-10 px-1"
+                      for="email"
+                      >Email</label
+                    >
+                    <input
+                      type="text"
+                      id="email"
+                      class="bg-[#F5F6F8] border p-4 rounded-md text-gray-800 w-full focus:outline-none focus:ring-1 focus:ring-gray-600"
+                      placeholder=" "
+                    />
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="text-message">
+                    <div
+                      id="message-error"
+                      class="hidden error-message absolute text-red-500 left-4 top-[-32px] text-sm mt-2"
+                    ></div>
+                    <label
+                      class="absolute left-4 top-3 text-gray-500 transition-all pointer-events-none z-10 px-1"
+                      for="message"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      class="bg-[#F5F6F8] border p-4 rounded-md text-gray-800 w-full focus:outline-none focus:ring-1 focus:ring-gray-600 h-32"
+                      placeholder=" "
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="text-verify flex gap-[2%] -mt-2">
+                  <div class="box h-[2vh] mt-[.3%]">
+                    <input
+                      id="terms"
+                      type="checkbox"
+                      value=""
+                      class="w-4 h-4 border border-[#8C8B8F]"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="terms" class="text-[100%] text-[#606062]"
+                      >You agree to receive email communication from us by
+                      submitting this form and understand that your contact
+                      information will be stored with us.</label
+                    >
+                  </div>
+                </div>
+
+                <button
+                  id="validation-btn"
+                  class="text-submit submit bg-[#FD4912]/90 py-5 rounded-md text-white tracking-[2px] font-medium md:col-span-2 hover:bg-[#FD4912] transition-colors duration-300"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-0 z-10 pointer-events-none"></div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.3148085970234!2d121.0585109!3d14.5745802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c86fbe746d0d%3A0xd12e52a6f0bd6027!2sAvasia%20Information%20Systems!5e0!3m2!1sen!2sph!4v1680000000000!5m2!1sen!2sph"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="rounded shadow-sm"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us page -->
+    <div id="aboutUs" class="aboutUs page active">
+      <!-- Company Content Section -->
+      <section class="w-full overflow-hidden">
+        <div class="flex items-center justify-center">
+          <video src="mp4/spices.mp4" autoplay muted loop playsinline></video>
+          <div class="absolute flex items-center justify-center">
+            <h1
+              class="text-4xl font-bold text-white flex items-center justify-center tracking-[1px]"
+            >
+              ABOUT US
+            </h1>
+          </div>
+        </div>
+        <!-- Circle  -->
+        <div class="circle h-auto w-full">
+          <div
+            class="circle-wrapper h-[100px] w-full overflow-hidden relative mt-[-100px]"
+          >
+            <div
+              class="w-[150%] h-[790%] sm:h-[760%] absolute left-[50%] rounded-[50%] transform -translate-x-1/2 bg-white"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- company details-->
+      <section class="w-full flex gap-16 px-16 py-20">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="md:w-1/2 text-[#101010] space-y-7 m-7">
+            <!-- title  -->
+            <div id="text-animation">
+              <div class="title-animation">
+                <div class="heading overflow-hidden">
+                  <span class="text-4xl font-bold"
+                    >The <span class="text-[#FD4912]">First</span> and
+                    <span class="text-[#FD4912]">#1</span> E-Commerce Platform
+                    for Farmers and Fishers</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- description -->
+            <div id="text-animation">
+              <div class="title-animation">
+                <div class="heading overflow-hidden">
+                  <span
+                    class="reveal-type text-lg"
+                    data-bg-color="#A8B7B7"
+                    data-fg-color="#101010"
+                    >SARISARI PH is an e-commerce platform provider for farmers,
+                    fishers, and producers. Local farmers and fishers can sell
+                    their produce thus promoting local farming and fishery while
+                    providing healthier options to consumers and aiming to
+                    bridge the gap between agri-fisheries and direct
+                    market.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              id="view-btn"
+              class="flex flex-col text-submit submit bg-[#FD4912]/90 px-5 py-2 rounded-md text-sm text-white tracking-[2px] font-medium md:col-span-2 hover:bg-[#FD4912] transition-colors duration-300"
+            >
+              View Our Service
+            </button>
+          </div>
+
+          <!-- farmer's video -->
+          <div class="md:w-3/4 flex justify-center items-center relative">
+            <video
+              src="mp4/farmer.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              class="rounded-2xl right-slide w-full max-w-3xl h-auto"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission and Vision -->
+      <section
+        class="block w-full h-screen relative flex flex-col justify-center items-center gap-8 px-10"
+      >
+        <!-- Background glow -->
+        <!-- <div class="-z-10 justify-center items-center">
+          <div id="glow-circle" class="circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[600px] max-h-[400px]">
+            <div class="absolute inset-0 rounded-full bg-[#FD4912]/10 blur-xl"></div>
+          </div>
+        </div> -->
+
+        <!-- cube animation background-->
+        <div class="top-slide container"></div>
+
+        <!-- Mission -->
+        <div
+          class="z-10 top-slide h-64 max-w-3xl bg-white/70 border border-[#FD4912]/20 p-10 rounded-2xl flex flex-col justify-center items-center text-center"
+        >
+          <div class="space-y-4">
+            <span class="text-[#FD4912] text-4xl font-semi-bold">MISSION</span>
+            <p class="text-[#101010]/70 text-lg leading-relaxed px-24">
+              To bridge the gap between agri-fisheries and direct market, while
+              promoting healthier options to consumers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vision -->
+        <div
+          class="z-10 top1-slide h-64 max-w-3xl bg-white/70 border border-[#FD4912]/20 p-10 rounded-2xl flex flex-col justify-center items-center text-center"
+        >
+          <div class="space-y-4">
+            <span class="text-[#FD4912] text-4xl font-semi-bold">VISION</span>
+            <p class="text-[#101010]/70 text-lg leading-relaxed px-24">
+              The first and no. 1 e-commerce platform for farmers and fishers to
+              the market.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- sliding image -->
+      <section class="h-full relative inline-block overflow-hidden">
+        <div class="image-row flex items-center justify-center w-100%">
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-50 rounded-full right-roll "
+          />
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 rounded-full right-roll bg-black"
+          />
+          <div
+            class="flex items-center justify-center h-80 w-[110rem] bg-white rounded-full border border-[#FD4912]/50 transform-origin-center"
+          >
+            <div id="text-animation">
+              <div class="things-animation">
+                <div class="heading overflow-hidden">
+                  <div
+                    class="flex flex-col justify-center items-center space-y-4"
+                  >
+                    <span
+                      class="text-[#FD4912] text-4xl text-center font-semi-bold px-4 md:px-10 tracking-[1px]"
+                    >
+                      THINGS WE CARE ABOUT
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-20 rounded-full right-roll"
+          />
+        </div>
+
+        <div class="image-row flex items-center justify-center">
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-10 rounded-full left-roll"
+          />
+          <div
+            class="flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center"
+          >
+            <div id="text-animation" class="w-full px-32">
+              <div class="community-animation">
+                <div class="heading overflow-hidden">
+                  <div
+                    class="email-slide flex flex-col justify-center items-center space-y-4"
+                  >
+                    <span
+                      class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]"
+                      >COMMUNITY</span
+                    >
+                    <p
+                      class="community-animation text-[#101010] text-lg leading-relaxed text-center"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex maxime ut natus debitis cum perspiciatis provident
+                      velit consequuntur nam earum modi sapiente deserunt,
+                      asperiores magnam, voluptatem sunt? Recusandae, laboriosam
+                      est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-50 rounded-full left-roll"
+          />
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 rounded-full left-roll"
+          />
+        </div>
+
+        <div class="image-row flex items-center justify-center">
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-50 rounded-full right1-roll"
+          />
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 rounded-full right1-roll"
+          />
+          <div
+            class="flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center"
+          >
+            <div id="text-animation" class="w-full px-32">
+              <div class="moral-animation">
+                <div class="heading overflow-hidden">
+                  <div
+                    class="phone-slide flex flex-col justify-center items-center space-y-4"
+                  >
+                    <span
+                      class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]"
+                      >MORAL</span
+                    >
+                    <p
+                      class="moral-animation text-[#101010] text-lg leading-relaxed text-center"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex maxime ut natus debitis cum perspiciatis provident
+                      velit consequuntur nam earum modi sapiente deserunt,
+                      asperiores magnam, voluptatem sunt? Recusandae, laboriosam
+                      est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-10 rounded-full right1-roll"
+          />
+        </div>
+
+        <div class="image-row flex items-center justify-center">
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-10 rounded-full left1-roll"
+          />
+          <div
+            class="flex items-center justify-center h-80 w-[110rem] border border-[#FD4912]/50 rounded-full transform-origin-center"
+          >
+            <div id="text-animation" class="w-full px-32">
+              <div class="people-animation">
+                <div class="heading overflow-hidden">
+                  <div
+                    class="address-slide flex flex-col justify-center items-center space-y-4"
+                  >
+                    <span
+                      class="text-[#FD4912] text-4xl font-semi-bold tracking-[1px]"
+                      >PEOPLE</span
+                    >
+                    <p
+                      class="people-animation text-[#101010] text-lg leading-relaxed text-center"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex maxime ut natus debitis cum perspiciatis provident
+                      velit consequuntur nam earum modi sapiente deserunt,
+                      asperiores magnam, voluptatem sunt? Recusandae, laboriosam
+                      est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 opacity-50 rounded-full left1-roll"
+          />
+          <img
+            src="img/orange.jpg"
+            alt="Image 6"
+            class="h-80 w-80 rounded-full left1-roll"
+          />
+        </div>
+      </section>
+
+      <!-- team profile  -->
+      <section class="h-full w-full p-10">
+        <div class="flex h-full w-full items-center justify-center p-4">
+          <div class="w-[1200px] max-w-full">
+            <ul
+              id="gallery"
+              class="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
+            >
+              <!-- Person 1 -->
+              <li
+                class="relative cursor-pointer md:w-[8%] md:first:w-[1%] md:hover:w-[12%] group-hover:w-[7%] transition-[width] duration-200 ease-in pointer-events-none"
+                data-active="false"
+                data-index="0"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2 md:opacity-0"
+                    src="img/profile.jpg"
+                    alt="Person 1"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-0 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-4 md:opacity-0 md:p-0"
+                  ></div>
+                </div>
+              </li>
+
+              <!-- Person 2 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="1"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Vice President
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      John Doe
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 3 (Active by default) -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="2"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Secretary
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Joe Smith
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 4 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="3"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Secretary
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Joe Smith
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 5 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="4"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Vice President
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      John Doe
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 6 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="5"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      President
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Alex Pasia
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 7 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="6"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Senior Developer
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Walter Toledo
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 8 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="7"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Junior Web Developer
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Ed Gallardo
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 9 -->
+              <li
+                class="relative cursor-pointer md:w-[48%] transition-[width] duration-600 cubic-bezier(0.22, 0.61, 0.36, 1)"
+                data-active="true"
+                data-index="8"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    src="img/profile.jpg"
+                    alt="Person 3"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-25 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-0 md:opacity-100 md:p-0"
+                  >
+                    <p
+                      class="text-white text-sm uppercase text-primary md:text-lg"
+                    >
+                      Junior Web Developer
+                    </p>
+                    <p class="text-[#FD4912] text-lg font-bold md:text-4xl">
+                      Joshua Manto
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 10 -->
+              <li
+                class="relative cursor-pointer md:w-[8%] md:first:w-[1%] md:hover:w-[12%] group-hover:w-[7%] transition-[width] duration-200 ease-in pointer-events-none"
+                data-active="false"
+                data-index="9"
+              >
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-2xl border border-[#FD4912]/20"
+                >
+                  <img
+                    class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2 md:opacity-0"
+                    src="img/profile.jpg"
+                    alt="Person 10"
+                    width="590"
+                    height="640"
+                  />
+                  <div
+                    class="inset-0 opacity-0 md:absolute md:transition-opacity md:duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture after:absolute after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture"
+                  ></div>
+                  <div
+                    class="left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:translate-x-4 md:opacity-0 md:p-0"
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <footer class="bg-gray-700 w-full relative z-40"></footer>
-    
+
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

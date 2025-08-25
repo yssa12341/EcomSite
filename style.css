@@ -9,6 +9,14 @@
       box-sizing: border-box;
     }
 
+    .page{
+      display: none;
+    }
+
+    .active{
+      display: block;
+    }
+
     .product-cube {
       width: 50px;
       height: 50px;
@@ -50,6 +58,7 @@
     .product-cube .cube__face--bottom {
       transform: rotateX(-90deg) translateZ(25px);
     }
+
 
 
 /* team profile animation */
