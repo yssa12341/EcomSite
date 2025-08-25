@@ -429,17 +429,35 @@ for (let i = 0; i < 15; i++) {
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Timeline for .new-part-1
+// contact us bottom curve animation
 var tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".circle",
     start: "0% 70%",
     end: "50% 50%",
     scrub: true,
+    // markers: true,
   },
 });
 
 tl2.to(".circle .circle-wrapper", {
+  height: 0,
+  marginTop: 0,
+  onUpdate: function () {},
+});
+
+// about us bottom curve animation
+var tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".circle1",
+    start: "0% 70%",
+    end: "50% 50%",
+    scrub: true,
+    // markers: true,
+  },
+});
+
+tl2.to(".circle1 .circle1-wrapper", {
   height: 0,
   marginTop: 0,
   onUpdate: function () {},
@@ -524,35 +542,36 @@ gsap.to(".left1-roll", {
 });
 
 // slide from bottom to top
-gsap.set(".top-slide", { opacity: 0, y: "100px" });
+gsap.set(".top-slide", { opacity: 0, y: "0" });
 
 gsap.to(".top-slide", {
-  duration: 1.5,
+  duration: 1,
   y: "-50px",
   opacity: 1,
   ease: "power3.out",
   scrollTrigger: {
-    trigger: ".top-slide",
+    trigger: ".mAndV",
     start: "top 100%",
-    end: "bottom 50%",
+    end: "top 50%",
     scrub: 1,
-    toggleActions: "play play reverse reverse",
+    toggleActions: "play none none reverse",
+    // markers: true,
   },
 });
 
-gsap.set(".top1-slide", { opacity: 0, y: "100px" });
+gsap.set(".top1-slide", { opacity: 0, y: "0" });
 
 gsap.to(".top1-slide", {
-  duration: 1.5,
+  duration: 1,
   y: "-50px",
   opacity: 1,
   ease: "power3.out",
   scrollTrigger: {
-    trigger: ".top1-slide",
-    start: "top 100%",
-    end: "bottom 100%",
+    trigger: ".mAndV",
+    start: "top 80%",
+    end: "bottom 50%",
     scrub: 1,
-    toggleActions: "play play reverse reverse",
+    toggleActions: "play none none reverse",
   },
 });
 
@@ -660,7 +679,7 @@ document.querySelectorAll(".image-row").forEach((imageRow, index) => {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     }
   );
@@ -717,7 +736,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".things-animation", // Specific trigger for Kiosk
-      start: "top 85%",
+      start: "top 80%",
       // end: "bottom 10%",
       toggleActions: "play none none reverse",
     },
@@ -737,6 +756,7 @@ gsap
       start: "top 83%",
       // end: "bottom 10%",
       toggleActions: "play none none reverse",
+      // markers: true,
     },
   })
   .to(".community-animation .heading span", {
@@ -745,6 +765,23 @@ gsap
     duration: 0.7,
     stagger: 0.2,
   });
+
+gsap.set(".community-slide", { opacity: 0, y: "-10px" });
+
+gsap.to(".community-slide", {
+  duration: 1.5,
+  y: "0px",
+  opacity: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".community-slide",
+    start: "top 80%",
+    end: "bottom 50%",
+    scrub: 1,
+    toggleActions: "play play reverse reverse",
+    // markers: true,
+  },
+});
 
 // transition for moral
 gsap
@@ -763,6 +800,23 @@ gsap
     stagger: 0.2,
   });
 
+gsap.set(".moral-slide", { opacity: 0, y: "-10px" });
+
+gsap.to(".moral-slide", {
+  duration: 1.5,
+  y: "0px",
+  opacity: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".moral-slide",
+    start: "top 78%",
+    end: "bottom 50%",
+    scrub: 1,
+    toggleActions: "play play reverse reverse",
+    // markers:true,
+  },
+});
+
 // transition for people
 gsap
   .timeline({
@@ -780,7 +834,24 @@ gsap
     stagger: 0.2,
   });
 
-// Title Animation
+gsap.set(".people-slide", { opacity: 0, y: "-10px" });
+
+gsap.to(".people-slide", {
+  duration: 1.5,
+  y: "0px",
+  opacity: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".people-slide",
+    start: "top 78%",
+    end: "bottom 76%",
+    scrub: 1,
+    toggleActions: "play play reverse reverse",
+    // markers: true,
+  },
+});
+
+// Title Animation contact us
 gsap
   .timeline({
     scrollTrigger: {
@@ -788,9 +859,28 @@ gsap
       start: "top 85%",
       end: "bottom 10%",
       toggleActions: "play none none reverse",
+      // markers: true,
     },
   })
   .to(".title-animation .heading span", {
+    // Specific to Kiosk
+    y: "0%",
+    duration: 0.7,
+    stagger: 0.2,
+  });
+
+// title 1 Animation about us
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".title1-animation", // Specific trigger for Kiosk
+      start: "top 85%",
+      end: "bottom 10%",
+      toggleActions: "play none none reverse",
+      // markers: true,
+    },
+  })
+  .to(".title1-animation .heading1 span", {
     // Specific to Kiosk
     y: "0%",
     duration: 0.7,
