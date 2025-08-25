@@ -1,12 +1,25 @@
 $(function () {
   // show pages
-  // function shownPage(pageId) {
-  $("button[data-page]").on("click", function () {
-    // Hide all pages
-    $(".page").removeClass("active");
-    var pageId = $(this).data("page");
-    // Show clicked page
-    $("#" + pageId).addClass("active");
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+  // });
+
+  $(".menu-items a").click(function () {
+    $("#checkbox").prop("checked", false);
   });
   // transition for name, email and message
   $(".relative input, .relative textarea").on("focus blur input", function () {
@@ -216,6 +229,10 @@ $(function () {
 
     // Initialize with middle item active
     setActiveItem(Math.floor(items.length / 2));
+
+    window.addEventListener("load", () => {
+      ScrollTrigger.refresh();
+    });
   });
 
   // $(document).ready(function() {
@@ -458,7 +475,7 @@ gsap.to(".right-roll", {
   scrollTrigger: {
     trigger: ".right-roll",
     start: "top 80%",
-    end: "bottom 0%",
+    end: "bottom 20%",
     scrub: 1,
     toggleActions: "play none none reverse",
     // markers: true,
@@ -553,6 +570,7 @@ gsap.to(".right-slide", {
     end: "bottom 50%",
     scrub: 1,
     toggleActions: "play play reverse reverse",
+    // markers: true,
   },
 });
 
@@ -587,6 +605,7 @@ gsap.to(".email-slide", {
     end: "bottom 50%",
     scrub: 1,
     toggleActions: "play play reverse reverse",
+    // markers: true,
   },
 });
 
@@ -641,6 +660,7 @@ document.querySelectorAll(".image-row").forEach((imageRow, index) => {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
+        markers: true,
       },
     }
   );
@@ -660,7 +680,7 @@ document.querySelectorAll(".image-row").forEach((imageRow, index) => {
 // });
 
 // reveal animation
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const splitTypes = document.querySelectorAll(".reveal-type");
 

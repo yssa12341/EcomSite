@@ -31,29 +31,13 @@
         <div
           class="hidden md:flex items-center space-x-6 uppercase text-sm font-semibold"
         >
-          <button href="#" class="text-gray-300 hover:text-white">Home</button>
-          <button  href="#" class="text-gray-300 hover:text-white">Sign Up</button>
-          <button  href="#" class="text-gray-300 hover:text-white">Login</button>
-          <button href="#contactUs" 
-            class="text-gray-300 hover:text-white"
-            data-page="contactUs"
-          >
-            Contact Us
-          </button>
-          <button href="#aboutUs"
-            class="text-gray-300 hover:text-white"
-            data-page="aboutUs"
-          >
-            About Us
-          </button>
-          <div class="flex items-center space-x-4 ml-4">
-            <svg
-              class="w-4 h-4 text-white"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
+            <ul class="menu-items hidden md:flex items-center space-x-6 uppercase text-sm font-semibold">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+            </ul>
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -292,7 +276,7 @@
     </div>
 
     <!-- about us page -->
-    <div id="aboutUs" class="aboutUs page ">
+    <div id="aboutUs" class="aboutUs page">
       <!-- Company Content Section -->
       <section class="w-full overflow-hidden">
         <div class="flex items-center justify-center">
@@ -417,17 +401,17 @@
       </section>
 
       <!-- sliding image -->
-      <section class="h-full relative inline-block overflow-hidden">
-        <div class="image-row flex items-center justify-center w-100%">
+      <section class="relative inline-block overflow-hidden">
+        <div class="image-row flex items-center justify-center">
           <img
             src="img/orange.jpg"
             alt="Image 6"
-            class="h-80 w-80 opacity-50 rounded-full right-roll "
+            class="h-80 w-80 opacity-50 rounded-full right-roll"
           />
           <img
             src="img/orange.jpg"
             alt="Image 6"
-            class="h-80 w-80 rounded-full right-roll bg-black"
+            class="h-80 w-80 rounded-full right-roll"
           />
           <div
             class="flex items-center justify-center h-80 w-[110rem] bg-white rounded-full border border-[#FD4912]/50 transform-origin-center"
@@ -929,7 +913,7 @@
     <footer class="bg-gray-700 w-full relative z-40"></footer>
 
     <script src="https://unpkg.com/split-type"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
